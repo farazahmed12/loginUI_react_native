@@ -23,15 +23,15 @@ const Welcome = () => {
           />
         </View>
         <View>
-          <TouchableOpacity onPress={() => navigation.navigate('Signup')} className="bg-yellow-400 mx-7 px-4 py-2 rounded-xl">
+          <TouchableOpacity onPress={() => navigation.navigate('Login')} className="bg-yellow-400 mx-7 mb-4 px-4 py-3 rounded-xl">
             <Text className="uppercase text-xl font-bold text-center">
-              signup
+              Login
             </Text>
           </TouchableOpacity>
           <View className="flex-row justify-center mt-2">
-            <Text className='text-white'>already have an account? </Text>
-            <TouchableOpacity onPress={() => navigation.navigate('Login')} >
-              <Text className='text-yellow-400 font-bold'>Log In</Text>
+            <Text className='text-white text-md'>don't have an account? </Text>
+            <TouchableOpacity onPress={() => navigation.navigate('Signup')} >
+              <Text className='text-yellow-400 font-bold'>Sign Up</Text>
             </TouchableOpacity>
           </View>
         </View>
